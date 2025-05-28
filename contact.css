@@ -1,0 +1,134 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: url(images/background\ wallpaperrrrr.jpg) center/cover;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+
+}
+
+.logo {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.5em;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #fff;
+  padding: 2em;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Contact Form Section */
+.featured {
+  padding: 2em;
+  background-color: #e9ecef;
+  max-width: 700px;
+  margin: 2em auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.featured form {
+  margin-bottom: 2em;
+}
+
+.featured label {
+  font-weight: bold;
+  display: block;
+  margin-top: 1em;
+}
+
+.featured input[type="text"],
+.featured input[type="email"],
+.featured textarea {
+  width: 100%;
+  padding: 0.8em;
+  margin-top: 0.3em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.featured textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.featured button {
+  display: block;
+  width: 100%;
+  padding: 0.8em;
+  margin-top: 1.5em;
+  background-color: #1e1e2f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.featured button:hover {
+  background-color: #33334d;
+}
+
+/* Contact Info */
+.featured h3 {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  color: #1e1e2f;
+}
+
+.featured p {
+  margin: 0.3em 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #1e1e2f;
+  color: #fff;
+  margin-top: 2em;
+}

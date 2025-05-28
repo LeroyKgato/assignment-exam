@@ -1,0 +1,105 @@
+/* styles.css */
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: url(images/background\ wallpaperrrrr.jpg) center/cover;
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.logo {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0.75rem;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+.feedback-container {
+  max-width: 600px;
+  margin: 2em auto;
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-container h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.feedback-form label {
+  display: block;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+.feedback-form input,
+.feedback-form textarea,
+.feedback-form select {
+  width: 100%;
+  padding: 0.8em;
+  margin-top: 0.3em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.feedback-form button {
+  display: block;
+  width: 100%;
+  margin-top: 1.5em;
+  padding: 0.8em;
+  background-color: #1e1e2f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.feedback-form button:hover {
+  background-color: #33334d;
+}
+
+footer {
+  background-color: #1e1e2f;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

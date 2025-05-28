@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leroy Gadgets - Online Phone Store</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Leroy Gadgets</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="phone.html"> Phones</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="contact.html">ContactUs</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to Leroy Gadgets</h1>
+      <p>Your one-stop shop for the latest smartphones.</p>
+    </section>
+
+    <section class="slideshow-container">
+      <img class="slides" src="images/istore walpaperrrrrr.webp" alt="iPhones">
+      <img class="slides" src="images/samsam44444444444.webp" alt="Samsung">
+      <img class="slides" src="images/huawei-experince-store-7.jpg" alt="Huawei">
+      <img class="slides" src="images/nokiaaaaaaaaaa.png" alt="Nokia">
+      <img class="slides" src="images/tecno storeeees.webp" alt="Tecno">
+    </section>
+    <div class="dot-container">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>
+    </div>
+
+    <section class="featured">
+      <h2>Our Brands</h2>
+      <div class="brand-grid">
+        <div class="brand"><a href="iphone.html">iPhones</a></div>
+        <div class="brand"><a href="samsung.html">Samsung</a></div>
+        <div class="brand"><a href="huawei.html">Huawei</a></div>
+        <div class="brand"><a href="nokia.html">Nokia</a></div>
+        <div class="brand"><a href="tecno.html">Tecno</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="flinks">
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact us</a>
+       </div>  
+    <p>&copy; 2025 Leroy Gadgets. All rights reserved.</p>
+  </footer>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      const slides = document.getElementsByClassName("slides");
+      const dots = document.getElementsByClassName("dot");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1; }
+      for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active-dot", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active-dot";
+      setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+  </script>
+</body>
+</html>

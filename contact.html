@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Leroy Gadgets</title>
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Leroy Gadgets</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="phone.html">Phones</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="contact.html">ContactUs</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Contact Leroy Gadgets</h1>
+      <p>We're here to help! Get in touch with us below.</p>
+    </section>
+
+    <section class="featured">
+      <form id="feedbackForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <h3>Contact Info</h3>
+      <p>Email: support@leroygadgets.com</p>
+      <p>Phone: +267 123 4567</p>
+      <p>Location: Gaborone, Botswana</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Leroy Gadgets. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent default form action
+      alert("Thank you for the feedback!"); // Show popup
+      this.reset(); // Clear form inputs
+    });
+  </script>
+</body>
+</html>
